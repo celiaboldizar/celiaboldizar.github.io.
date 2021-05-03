@@ -1,0 +1,414 @@
+/* body */
+
+* {margin: 0;}
+    
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 100px 280px 50px 420px 400px 370px 520px;;   
+}
+
+
+/* header */
+
+header {
+    background: #ff9797;
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; 
+    flex-direction: column;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+#logo {
+    width: 80px;
+    align-self: flex-start;
+    margin-bottom: -50px;
+    margin-left: 10px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighter;
+    font-size: 45px;
+    margin-bottom: -10px;
+    margin-top: -30px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Antonio', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+/* intro */
+
+.introsection {
+    background: #ffe0b9 ;
+    grid-column: 1 / 7;
+    grid-row: 2 / 3;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    color: #e99b14;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;  
+}
+
+#para {
+    width: 50%;
+    margin-top: 15px;
+}
+
+/* services section */
+
+.servicetitle {
+    background: white;
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.servicesection {
+    grid-column: 1 / 7;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    align-items: center; 
+    text-align: center;
+}
+
+#servicecards {
+    min-width: 60px;
+}
+
+#servicecards:hover {
+    opacity: .7;
+    transition: all 300ms ease-in-out;
+}
+
+#icon1 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    color: white;
+    font-family: 'Antonio', sans-serif;
+}
+
+.email {
+    background: #f55e43;
+    padding: 20px;
+    height: 73%;
+    width: 15%;
+}
+
+.calendar {
+    background: #ffbdc8;
+    padding: 20px;
+    height: 73%;
+    width: 15%;
+}
+
+.instagram {
+    background: #e99b14;
+    padding: 20px;
+    height: 73%;
+    width: 15%;
+}
+
+.blog {
+    background: #ff9797;
+    padding: 20px;
+    height: 73%;
+    width: 15%;
+}
+
+ul {
+    margin-top: 40px;
+    margin-inline: 10px;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+
+
+/* about section */
+
+.aboutsection {
+    grid-column: 1 / 7;
+    grid-row: 5 / 6;
+    background: #ffbdc8;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; 
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#abouttitle {
+    color: #f55e43;
+    font-size: 50px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-bottom: -20px;
+    margin-top: 10px;
+}
+
+#abouttext {
+    padding: 10px;
+    margin-left: 50px;
+    width: 50%;
+    font-size: 23px;
+    margin-top: 50px;
+}
+
+#profilepic {
+    width: 30%;
+    height: auto;
+    border-radius: 10em;
+    align-self: flex-end;
+    margin-top: -260px;
+    margin-right: 40px;
+}
+
+
+/* contact section */
+
+.contactsection {
+    grid-column: 1 / 7;
+    grid-row: 6 / 7;
+    background: #e99b14;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    background: white;
+    text-align: center;
+    padding: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contacttitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#contacttext {
+    margin-bottom: 30px;
+}
+
+#myemail {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 200;
+    color: white;
+    font-size: 20px;
+    background: #ff9797;
+    width: 50%;
+    padding: 20px;
+}
+
+#myemail:hover {
+    background: #f55e43;
+    transition: all 300ms ease-in-out;
+}
+
+/* footer */
+
+footer {
+    grid-column: 1 / 7;
+    grid-row: 7 / 8;
+    background: #ffe0b9;
+}
+
+.footerstuff {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+a {
+    color: #f55e43;
+    font-family: 'Antonio', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+a:hover {
+    color: #e99b14;
+    font-style: italic;
+}
+
+.socials {
+    display: block;
+    width: 10%;
+}
+
+h6 {
+    font-size: 40px;
+    color: #e99b14;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighter;
+}
+
+.quote {
+    width: 30%;
+}
+
+span {
+    color: black;
+    font-size: 20px;
+}
+
+#copy {
+    text-align: center;
+    margin-top: 130px;
+}
+
+/* mobile */
+
+@media screen and (max-width: 857px) { 
+    
+    ul {
+        text-align: left;
+        margin-left: -25px;
+    }
+}
+
+@media screen and (max-width: 602px) { 
+    
+    #servicecards {
+        width: 220px;
+        padding: 20px;
+        height: 40%;
+        margin-bottom: 20px;
+    }
+
+    .grid {
+        grid-template-rows: 100px 280px 50px 600px 600px 370px 520px;;   
+    }
+
+    .aboutsection {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #profilepic {
+        align-self: center;
+        margin-top: 30px;
+        margin-right: 0px;
+    }
+
+    #abouttitle {
+        margin-left: 0px;
+        margin-bottom: -20px;
+        margin-top: 10px;
+    }
+    
+    #abouttext {
+        margin-left: 0px;
+        width: 50%;
+        font-size: 23px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .socials {
+        margin-left: -80px;
+    }
+}
+
+@media screen and (max-width: 552px) { 
+    
+    #servicecards {
+        width: 170px;
+    }
+
+    .grid {
+        grid-template-rows: 100px 350px 50px 600px 600px 370px 520px;;   
+    }
+
+    #para {
+        width: 100%;
+    }
+
+    #myemail {
+        width: 70%;
+    }
+
+    h6 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 449px) { 
+    
+    #servicecards {
+        width: 120px;
+    }
+
+    li {margin-top: -10px;}
+
+    #logo {
+        width: 15%;
+        margin-left: -13px;
+    }
+
+    #contacttitle {
+        font-size: 30px;
+    }
+
+    #myemail {
+        font-size: 17px;
+    }
+}
